@@ -8,7 +8,7 @@ import { useRef, useState } from 'react';
 import DetailUser from './detail.user';
 import CreateUser from './create.user';
 import ImportUser from './data/import.user';
-import { CSVLink } from "react-csv";
+// import { CSVLink } from "react-csv";
 import UpdateUser from './update.user';
 
 type TSearch = {
@@ -198,17 +198,17 @@ const TableUser = () => {
 
                 headerTitle="Table user"
                 toolBarRender={() => [
-                    <CSVLink
-                        data={currentDataTable}
-                        filename='export-user.csv'
-                    >
-                        <Button
-                            icon={<ExportOutlined />}
-                            type="primary"
-                        >
-                            Export
-                        </Button>
-                    </CSVLink>
+                    // <CSVLink
+                    //     data={currentDataTable}
+                    //     filename='export-user.csv'
+                    // >
+                    //     <Button
+                    //         icon={<ExportOutlined />}
+                    //         type="primary"
+                    //     >
+                    //         Export
+                    //     </Button>
+                    // </CSVLink>
                     ,
 
                     <Button
