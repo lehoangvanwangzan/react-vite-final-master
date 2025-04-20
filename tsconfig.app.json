@@ -28,6 +28,9 @@
       ],
       "services/*": [
         "./src/services/*"
+      ],
+      "react": [
+        "./node_modules/@types/react"
       ]
     },
     /* Bundler mode */
