@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { Popconfirm, Button, App } from 'antd';
 import { DeleteTwoTone, EditTwoTone, ExportOutlined, PlusOutlined } from '@ant-design/icons';
 import DetailBook from './detail.book';
-// import { CSVLink } from 'react-csv';
+import { CSVLink } from 'react-csv';
 import { ProTable } from '@ant-design/pro-components';
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { dateRangeValidate } from '@/services/helper';
@@ -219,17 +219,17 @@ const TableBook = () => {
 
                 headerTitle="Table book"
                 toolBarRender={() => [
-                    // <CSVLink
-                    //     data={currentDataTable}
-                    //     filename='export-book.csv'
-                    // >
-                    //     <Button
-                    //         icon={<ExportOutlined />}
-                    //         type="primary"
-                    //     >
-                    //         Export
-                    //     </Button>
-                    // </CSVLink >
+                    <CSVLink
+                        data={currentDataTable}
+                        filename='export-book.csv'
+                    >
+                        <Button
+                            icon={<ExportOutlined />}
+                            type="primary"
+                        >
+                            Export
+                        </Button>
+                    </CSVLink >
                     ,
 
                     <Button
